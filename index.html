@@ -1,178 +1,193 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andressa Lima - Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/css/ionicons.min.css">
-
-      <!-- Vendor CSS Files -->
-    <!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
-
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfólio de Andressa Lima, desenvolvedora Full Stack com experiência em React, TypeScript, Kotlin, Spring Boot, Shopify e integrações de IA.">
+    <meta name="theme-color" content="#07111f">
+    <meta property="og:title" content="Andressa Lima | Full Stack Developer">
+    <meta property="og:description" content="Produtos web, e-commerce B2B e DTC e integrações de IA em tempo real.">
+    <meta property="og:type" content="website">
+    <title>Andressa Lima | Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div id="particles-js"></div>
-    <header class="fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">Andressa Lima</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html#work">Carreira</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">Sobre</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
-                    </ul>
-                </div>
-            </div>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+    <header class="site-header" data-header>
+      <div class="container nav-wrap">
+        <a class="brand" href="#inicio" aria-label="Andressa Lima, início">AL</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+          <span class="sr-only">Abrir menu</span>
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="menu-principal" class="main-nav" aria-label="Navegação principal">
+          <a href="#projetos">Projetos</a>
+          <a href="#experiencia">Experiência</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#contato">Contato</a>
         </nav>
+      </div>
     </header>
 
-    <main>
-        
-        <section class="hero vh-100 d-flex align-items-center">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <h1 class="display-4 fw-bold animate__animated animate__fadeInLeft">OI, EU SOU ANDRESSA LIMA.</h1>
-                        <p class="lead animate__animated animate__fadeInLeft animate__delay-1s">Uma desenvolvedora front-end baseada em Aracaju-SE apaixonada por criar sites acessíveis e fáceis de usar.</p>
-
-                        <div class="social-icons mt-4 animate__animated animate__fadeInUp animate__delay-3s">
-                            <button class="btn btn-contact btn-primary btn-lg mt-3 animate__animated animate__fadeInUp animate__delay-2s">CONTATO</button>
-                            <a href="#" class="me-2"><i class="bi bi-linkedin"></i></a>
-                            <a href="#" class="me-2"><i class="bi bi-github"></i></a>
-                            <a href="#" class="me-2"><i class="bi bi-twitter-x"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <img src="images/perfil copiar.jpg" alt="Andressa Lima" class="img-fluid rounded-circle animate__animated animate__fadeInRight">
-                    </div>
-                </div>
+    <main id="conteudo">
+      <section id="inicio" class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Full Stack Developer · Aracaju SE</p>
+            <h1>Transformo necessidades de produto em software claro e confiável.</h1>
+            <p class="hero-text">
+              Atuo do frontend ao backend com React, TypeScript, Kotlin, Spring Boot e Shopify.
+              Tenho experiência em e-commerce B2B e DTC, plataformas multilíngues e interfaces de IA em tempo real.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projetos">Conhecer meu trabalho</a>
+              <a class="button button-secondary" href="assets/Andressa_Lima_Curriculo_RH.pdf" download>Baixar currículo</a>
             </div>
-        </section>
+            <ul class="profile-links" aria-label="Perfis profissionais">
+              <li><a href="https://www.linkedin.com/in/andressa-l" target="_blank" rel="noreferrer">LinkedIn</a></li>
+              <li><a href="https://github.com/Andressa-lima-s" target="_blank" rel="noreferrer">GitHub profissional</a></li>
+              <li><a href="mailto:gregorio.andressa.lima@gmail.com">E-mail</a></li>
+            </ul>
+          </div>
 
-        <section id="work" class="py-5">
-            <div class="container">
-                <h2 class="text-center mb-5 wow fadeInUp">PROJETOS EM DESTAQUE</h2>
-                <p style="display: flex; align-items: center; text-align: center;"><i>Aqui estão alguns dos projetos selecionados que demonstram minha paixão pelo desenvolvimento front-end.</i></p><br>
-                <div class="row">
-                    <div class="col-md-6 mb-4 wow fadeInLeft">
-                        <div class="card">
-                            <img src="images/game-carro.png" class="card-img-top" alt="Project 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Selecione o Carro</h5>
-                                <p class="card-text">Interface pronta, criei e
-                                    usei métodos para
-                                    manipular o DOM
-                                    (Document Object
-                                    Model).</p>
-                                <a href="https://andressa-l.github.io/ex-selecione-o-carro/" target="_blank" class="btn btn-primary me-2">DEMO AO VIVO</a>
-                                <a href="https://github.com/andressa-l/ex-selecione-o-carro" target="_blank" class="btn btn-secondary">VER NO GITHUB</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 mb-4 wow fadeInLeft">
-                        <div class="card">
-                            <img src="images/conta-digital.png" class="card-img-top" alt="Project 2">
-                            <div class="card-body">
-                                <h5 class="card-title">Conta Digital</h5>
-                                <p class="card-text">Analisei o protótipo
-                                    predefinido e usei
-                                    métodos para manipular
-                                    o DOM (Document
-                                    Object Model).</p>
-                                <a href="https://andressa-l.github.io/ex-conta-digital/" target="_blank" class="btn btn-primary me-2">DEMO AO VIVO</a>
-                                <a href="https://github.com/andressa-l/ex-conta-digital" target="_blank" class="btn btn-secondary">VER NO GITHUB</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 mb-4 wow fadeInLeft">
-                        <div class="card">
-                            <img src="images/calculadora.png" class="card-img-top" alt="Project 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Calculadora</h5>
-                                <p class="card-text">Analisei o protótipo
-                                    predefinido e usei
-                                    métodos para manipular
-                                    o DOM (Document
-                                    Object Model).</p>
-                                <a href="https://andressa-l.github.io/ex-calculadora/" target="_blank" class="btn btn-primary me-2">DEMO AO VIVO</a>
-                                <a href="https://github.com/andressa-l/ex-calculadora" target="_blank" class="btn btn-secondary">VER NO GITHUB</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 mb-4 wow fadeInLeft">
-                        <div class="card">
-                            <img src="images/consulta-cnpj.png" class="card-img-top" alt="Project 4">
-                            <div class="card-body">
-                                <h5 class="card-title">Consulta CNPJ</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cumque esse repudiandae. Rem eveniet est repellat delectus laboriosam magni architecto corrupti fuga tempora, id excepturi ex odit. Nobis, sapiente repudiandae.</p>
-                                <a href="https://andressa-l.github.io/consulta-cnpj/" target="_blank" class="btn btn-primary me-2">DEMO AO VIVO</a>
-                                <a href="https://github.com/andressa-l/consulta-cnpj" target="_blank" class="btn btn-secondary">VER NO GITHUB</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 mb-4 wow fadeInLeft">
-                        <div class="card">
-                            <img src="images/gerenciador-tarefas.png" class="card-img-top" alt="Project 4">
-                            <div class="card-body">
-                                <h5 class="card-title">Gerenciador de Tarefas</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cumque esse repudiandae. Rem eveniet est repellat delectus laboriosam magni architecto corrupti fuga tempora, id excepturi ex odit. Nobis, sapiente repudiandae.</p>
-                                <a href="https://andressa-l.github.io/gerenciador-de-tarefas/" target="_blank" class="btn btn-primary me-2">DEMO AO VIVO</a>
-                                <a href="https://github.com/andressa-l/gerenciador-de-tarefas" target="_blank" class="btn btn-secondary">VER NO GITHUB</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="portrait-wrap reveal" aria-label="Foto profissional de Andressa Lima">
+            <div class="portrait-frame">
+              <img src="images/andressa-profile.jpg" alt="Andressa Lima, desenvolvedora Full Stack" width="720" height="900">
             </div>
-        </section>
+            <p class="availability">Disponível para oportunidades Full Stack</p>
+          </div>
+        </div>
+      </section>
 
-        
+      <section class="proof" aria-label="Destaques profissionais">
+        <div class="container proof-grid">
+          <div><strong>3</strong><span>produtos em produção</span></div>
+          <div><strong>2.400+</strong><span>itens no maior catálogo</span></div>
+          <div><strong>B2B e DTC</strong><span>experiência internacional</span></div>
+          <div><strong>Tempo real</strong><span>SSE e WebSocket</span></div>
+        </div>
+      </section>
 
-        <section id="contact" class="py-5 bg-light">
-            <div class="container">
-                <h2 class="text-center mb-5 wow fadeInUp">VAMOS CONECTAR</h2>
-                <form class="wow fadeInUp">
-                    <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Name" required>
-                    </div>
-                    <div class="mb-3">
-                        <input type="email" class="form-control" placeholder="Email" required>
-                    </div>
-                    <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Subject" required>
-                    </div>
-                    <div class="mb-3">
-                        <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">ENVIAR</button>
-                </form>
+      <section id="projetos" class="section section-light">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Produtos selecionados</p>
+            <h2>Trabalho que chegou a usuários reais</h2>
+            <p>Projetos profissionais desenvolvidos em colaboração com times de produto, design e engenharia.</p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <div class="project-index">01</div>
+              <p class="project-type">Marketplace B2B · Construção civil</p>
+              <h3>ConstruClick</h3>
+              <p>Marketplace multilíngue em inglês e espanhol, preparado para mais de 2.400 produtos. Desenvolvi fluxos de cotação, controle de acesso, dashboards e interfaces para agentes de IA.</p>
+              <ul class="tag-list" aria-label="Tecnologias do ConstruClick">
+                <li>React 19</li><li>TypeScript</li><li>Kotlin</li><li>Spring Boot</li><li>SSE</li><li>WebSocket</li>
+              </ul>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-index">02</div>
+              <p class="project-type">Shopify Headless · B2B</p>
+              <h3>Ananda Health</h3>
+              <p>Plataforma de atacado para um fabricante de suplementos dos Estados Unidos. Participei do planejamento técnico, da modelagem do catálogo e do desenvolvimento do núcleo do e-commerce.</p>
+              <ul class="tag-list" aria-label="Tecnologias da Ananda Health">
+                <li>Hydrogen</li><li>Oxygen</li><li>GraphQL</li><li>Metafields</li><li>Metaobjects</li>
+              </ul>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-index">03</div>
+              <p class="project-type">Shopify · DTC</p>
+              <h3>Ryde</h3>
+              <p>E-commerce de bebidas funcionais nos Estados Unidos. Desenvolvi componentes do tema, assinaturas recorrentes, localizador de lojas e templates de comunicação.</p>
+              <ul class="tag-list" aria-label="Tecnologias da Ryde">
+                <li>Shopify Liquid</li><li>Assinaturas</li><li>Klaviyo</li><li>Store Locator</li>
+              </ul>
+            </article>
+          </div>
+          <p class="project-note">Projetos profissionais apresentados sem código-fonte por confidencialidade.</p>
+        </div>
+      </section>
+
+      <section id="experiencia" class="section">
+        <div class="container split-layout">
+          <div class="section-heading sticky-heading reveal">
+            <p class="eyebrow">Experiência</p>
+            <h2>Da interface à entrega</h2>
+            <p>Experiência prática em produto, engenharia e colaboração técnica.</p>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-meta"><span>Timberstone</span><time>2026</time></div>
+              <h3>Full Stack Developer</h3>
+              <p>Desenvolvimento do ConstruClick, integrações de IA, serviços em Kotlin e Spring Boot, onboarding e code reviews.</p>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-meta"><span>AjuLabs</span><time>2025 — 2026</time></div>
+              <h3>Full Stack Developer e Shopify Specialist</h3>
+              <p>Produtos para Good Monster e Timberstone, com foco em Shopify, e-commerce B2B e DTC e bases de frontend para integrações de IA.</p>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-meta"><span>Grupo Tiradentes</span><time>2024 — 2025</time></div>
+              <h3>Técnico de TI e Assistente de Laboratório</h3>
+              <p>Suporte a sistemas acadêmicos, infraestrutura e preparação de ambientes de software para alunos e professores.</p>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-meta"><span>Projetos Freelancer</span><time>2022 — 2024</time></div>
+              <h3>Desenvolvedora Full Stack</h3>
+              <p>Sites responsivos, gestão de conteúdo e automação para extração de dados com C# e .NET.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="habilidades" class="section section-light">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Habilidades</p>
+            <h2>Tecnologia a serviço do produto</h2>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-group reveal"><h3>Frontend</h3><p>React, TypeScript, JavaScript, Next.js, Vite, Tailwind CSS, Recharts, HTML e CSS.</p></article>
+            <article class="skill-group reveal"><h3>Backend e APIs</h3><p>Kotlin, Spring Boot, Node.js, C#, .NET 6, REST, GraphQL e modelagem de dados.</p></article>
+            <article class="skill-group reveal"><h3>E-commerce</h3><p>Shopify Hydrogen, Oxygen, Liquid, Storefront API, Customer Account API, B2B e DTC.</p></article>
+            <article class="skill-group reveal"><h3>IA e tempo real</h3><p>Streaming de respostas, Server-Sent Events, WebSocket, STOMP e renderização de Markdown.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="section contact-section">
+        <div class="container contact-grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Contato</p>
+            <h2>Vamos conversar sobre o próximo produto.</h2>
+          </div>
+          <div class="contact-card reveal">
+            <p>Estou aberta a oportunidades Full Stack e projetos com desafios reais de produto.</p>
+            <a class="contact-email" href="mailto:gregorio.andressa.lima@gmail.com">gregorio.andressa.lima@gmail.com</a>
+            <div class="contact-links">
+              <a href="https://www.linkedin.com/in/andressa-l" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://github.com/Andressa-lima-s" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="assets/Andressa_Lima_Curriculo_RH.pdf" download>Currículo</a>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="bg-dark text-light py-4">
-        <div class="container text-center">
-            <p>&copy; 2024 Andressa Lima. All rights reserved.</p>
-        </div>
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>Andressa Lima · Full Stack Developer</p>
+        <p>© <span data-year></span></p>
+      </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/wow.js@1.1.2/dist/wow.min.js"></script>
-    <script src="script.js"></script>
-</body>
+  </body>
 </html>
